@@ -45,7 +45,7 @@ get_latest_version() {
 
 # Download and install
 install_binary() {
-    VERSION="${1:-$(get_latest_version)}"
+    VERSION="${1:-${VERSION:-$(get_latest_version)}}"
     if [ -z "$VERSION" ]; then
         echo "Error: could not determine version"
         exit 1

@@ -1,12 +1,12 @@
 {
-  "version": "0.1.4",
+  "version": "0.1.5",
   "channel": "stable",
   "published": "2026-08-14",
   "changelog": [
-    "Linux support (.deb, .rpm, curl install)",
-    "Mistral router with 30 rotating API keys",
-    "Fake model display (shows Claude/GPT, runs Mistral)",
-    "Auto-update support",
-    "npm/bun/brew/paru installation methods"
+    "Fixed listcoder upgrade (default script URL now points to GitHub raw install.sh)",
+    "install.sh honors VERSION env so upgrades target the exact version",
+    "Package renamed to ListCoderCLi in installer output",
+    "npm/bun tarball package published as @list-coder/cli release asset",
+    "Homebrew tap: legitey01/homebrew-tap"
   ]
 }
