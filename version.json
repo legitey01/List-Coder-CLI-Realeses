@@ -1,10 +1,12 @@
 {
-  "version": "0.1.5",
+  "version": "0.1.6",
   "channel": "stable",
   "published": "2026-08-14",
   "changelog": [
     "Fixed listcoder upgrade (default script URL now points to GitHub raw install.sh)",
-    "install.sh honors VERSION env so upgrades target the exact version",
+    "install.sh honors VERSION env and normalizes v-prefix so upgrades target the exact version",
+    "listcoder upgrade --method <m> now forwards the method to version resolution",
+    "Installations in /usr/local/bin (.deb/.rpm) recognized as curl-managed for upgrades",
     "Package renamed to ListCoderCLi in installer output",
     "npm/bun tarball package published as @list-coder/cli release asset",
     "Homebrew tap: legitey01/homebrew-tap"

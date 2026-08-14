@@ -50,10 +50,15 @@ install_binary() {
         echo "Error: could not determine version"
         exit 1
     fi
+    # Normalize to a v-prefixed tag (both "0.1.5" and "v0.1.5" are accepted)
+    case "$VERSION" in
+        v*) VERSION_TAG="$VERSION" ;;
+        *)  VERSION_TAG="v$VERSION" ;;
+    esac
 
     detect_platform
 
-    echo "Installing ListCoderCLi $VERSION for $PLATFORM..."
+    echo "Installing ListCoderCLi $VERSION_TAG for $PLATFORM..."
 
     # Create install directory
     mkdir -p "$INSTALL_DIR"
@@ -61,11 +66,11 @@ install_binary() {
     # Determine download URL
     case "$PLATFORM" in
         *windows*)
-            URL="https://github.com/$REPO/releases/download/$VERSION/listcoder-$PLATFORM.exe"
+            URL="https://github.com/$REPO/releases/download/$VERSION_TAG/listcoder-$PLATFORM.exe"
             OUTPUT="$INSTALL_DIR/$BINARY_NAME.exe"
             ;;
         *)
-            URL="https://github.com/$REPO/releases/download/$VERSION/listcoder-$PLATFORM"
+            URL="https://github.com/$REPO/releases/download/$VERSION_TAG/listcoder-$PLATFORM"
             OUTPUT="$INSTALL_DIR/$BINARY_NAME"
             ;;
     esac
