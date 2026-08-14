@@ -1,12 +1,9 @@
 {
-  "version": "0.1.12",
+  "version": "0.1.13",
   "channel": "stable",
   "published": "2026-08-14",
   "changelog": [
-    "Auto-update check every 30 seconds (TUI) using ETag conditional requests so it does not hit GitHub rate limits",
-    "Fixed update notification: installation events now reach the TUI toast (Worker forwards them as global events)",
-    "Notification message copied from Windows auto-update: 'Patch update applied: vX. Restart to use the new version.'",
-    "listcoder run now prints the update notification after applying it",
-    "Never downgrade silently if the installed version is newer than the latest release"
+    "Stable release with the full auto-update experience: 30s checks with ETag, fixed update toast, Windows-style notification message",
+    "Same changes as v0.1.12 published as a regular stable release"
   ]
 }

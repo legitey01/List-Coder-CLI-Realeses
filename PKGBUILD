@@ -1,6 +1,6 @@
 # Maintainer: ListCoder Team <support@list-coder.com>
 pkgname=listcoder-bin
-pkgver=0.1.12
+pkgver=0.1.13
 pkgrel=1
 pkgdesc='AI-powered development tool'
 arch=('x86_64' 'aarch64')
