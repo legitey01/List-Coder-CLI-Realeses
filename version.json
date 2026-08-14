@@ -1,9 +1,9 @@
 {
-  "version": "0.1.13",
+  "version": "0.1.14",
   "channel": "stable",
   "published": "2026-08-14",
   "changelog": [
-    "Stable release with the full auto-update experience: 30s checks with ETag, fixed update toast, Windows-style notification message",
-    "Same changes as v0.1.12 published as a regular stable release"
+    "Maintenance release: same installers, refreshed builds",
+    "AUR PKGBUILD discontinued (upstream site instability)"
   ]
 }
