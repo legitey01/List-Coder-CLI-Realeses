@@ -1,14 +1,14 @@
 {
-  "version": "0.1.6",
+  "version": "0.1.10",
   "channel": "stable",
   "published": "2026-08-14",
   "changelog": [
-    "Fixed listcoder upgrade (default script URL now points to GitHub raw install.sh)",
-    "install.sh honors VERSION env and normalizes v-prefix so upgrades target the exact version",
-    "listcoder upgrade --method <m> now forwards the method to version resolution",
-    "Installations in /usr/local/bin (.deb/.rpm) recognized as curl-managed for upgrades",
-    "Package renamed to ListCoderCLi in installer output",
-    "npm/bun tarball package published as @list-coder/cli release asset",
-    "Homebrew tap: legitey01/homebrew-tap"
+    "Auto-update now replaces the binary in-place on Linux/macOS (same as Windows)",
+    "listcoder run checks for updates in the background and notifies after the run",
+    "TUI re-checks for updates every 6 hours (not only at startup)",
+    "If the silent auto-upgrade fails, the user is still notified",
+    "listcoder upgrade --method <m> now forwarded to version resolution",
+    "Installations in /usr/local/bin (.deb/.rpm) recognized as curl-managed",
+    "install.sh honors VERSION env and normalizes the v-prefix"
   ]
 }
