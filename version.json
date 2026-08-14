@@ -1,14 +1,8 @@
 {
-  "version": "0.1.10",
+  "version": "0.1.11",
   "channel": "stable",
   "published": "2026-08-14",
   "changelog": [
-    "Auto-update now replaces the binary in-place on Linux/macOS (same as Windows)",
-    "listcoder run checks for updates in the background and notifies after the run",
-    "TUI re-checks for updates every 6 hours (not only at startup)",
-    "If the silent auto-upgrade fails, the user is still notified",
-    "listcoder upgrade --method <m> now forwarded to version resolution",
-    "Installations in /usr/local/bin (.deb/.rpm) recognized as curl-managed",
-    "install.sh honors VERSION env and normalizes the v-prefix"
+    "TEST RELEASE - v0.1.11 fake test version to demonstrate background auto-update"
   ]
 }
