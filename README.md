@@ -1,10 +1,13 @@
 # List-Coder-CLI Releases
 
-This repository hosts the release assets for [List Coder CLI](https://list-coder.com/coder), a terminal-native AI coding assistant.
+This repository hosts the release assets for [ListCoderCLi](https://list-coder.com/coder), a terminal-native AI coding assistant.
 
 ## What's here
 
 - `List-Coder-CLI-Setup-<version>.exe` â€” official Windows installer (NSIS, per-user, no admin required)
+- `install.sh` â€” Linux/macOS installer
+- `listcoder-x86_64-unknown-linux-gnu` â€” Linux binary
+- `.deb` / `.rpm` packages, Homebrew formula, AUR PKGBUILD
 - `v<version>` tags pointing to each published release
 
 ## Install
@@ -19,10 +22,22 @@ Download the latest `List-Coder-CLI-Setup-*.exe` from the [releases page](https:
 powershell -ep Bypass -c "irm https://raw.githubusercontent.com/legitey01/List-Coder-CLI/main/install.ps1 | iex"
 ```
 
-### macOS / Linux
+### Linux / macOS (curl)
 
 ```bash
-curl -fsSL https://list-coder.com/install | bash
+curl -fsSL https://raw.githubusercontent.com/legitey01/List-Coder-CLI-Realeses/main/install.sh | bash
+```
+
+### Linux (package managers)
+
+```bash
+# Debian / Ubuntu
+curl -fsSL -o /tmp/listcoder.deb https://github.com/legitey01/List-Coder-CLI-Realeses/releases/latest/download/listcoder_0.1.4_amd64.deb
+sudo dpkg -i /tmp/listcoder.deb
+
+# Fedora / RHEL
+curl -fsSL -o /tmp/listcoder.rpm https://github.com/legitey01/List-Coder-CLI-Realeses/releases/latest/download/listcoder-0.1.4-1.x86_64.rpm
+sudo dnf install /tmp/listcoder.rpm
 ```
 
 ## Then
