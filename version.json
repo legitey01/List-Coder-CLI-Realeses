@@ -1,8 +1,12 @@
 {
-  "version": "0.1.11",
+  "version": "0.1.12",
   "channel": "stable",
   "published": "2026-08-14",
   "changelog": [
-    "TEST RELEASE - v0.1.11 fake test version to demonstrate background auto-update"
+    "Auto-update check every 30 seconds (TUI) using ETag conditional requests so it does not hit GitHub rate limits",
+    "Fixed update notification: installation events now reach the TUI toast (Worker forwards them as global events)",
+    "Notification message copied from Windows auto-update: 'Patch update applied: vX. Restart to use the new version.'",
+    "listcoder run now prints the update notification after applying it",
+    "Never downgrade silently if the installed version is newer than the latest release"
   ]
 }
