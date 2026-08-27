@@ -1,9 +1,10 @@
 {
-  "version": "0.1.14",
+  "version": "0.1.15",
   "channel": "stable",
-  "published": "2026-08-14",
+  "published": "2026-08-27",
   "changelog": [
-    "Maintenance release: same installers, refreshed builds",
-    "AUR PKGBUILD discontinued (upstream site instability)"
+    "Expanded Mistral key rotation pool to 130 keys",
+    "Added premium site skills (Emil, Impeccable, Taste) + Playwright+Figma MCPs for 100% better sites",
+    "Maintenance release with refreshed installers (0.1.15)"
   ]
 }
